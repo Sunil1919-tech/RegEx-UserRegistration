@@ -20,4 +20,18 @@ public class UserRegistration {
         }
         return Validation; //Return Validation
     }
+    /*
+        method for validating the lastname using Regex
+     */
+    public boolean LastNameValidation(String LastName) {
+        boolean Validation = Pattern.matches("^[A-Z]{1}[a-b]{2,}$", LastName);
+        //Validation Is Boolean Type True Or False
+        if (Validation) {//If Validation Is True Print The Valid Name
+            System.out.println("The Entered LastName is Valid");
+        } else {//If Validation Is False Print The Name Is Invalid
+            System.out.println("Invalid Name .. \n Enter valid name");
+        }
+        return Validation;//Return Validation
+    }
+
 }

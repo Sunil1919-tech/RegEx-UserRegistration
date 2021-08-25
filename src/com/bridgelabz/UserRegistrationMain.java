@@ -15,6 +15,9 @@ public class UserRegistrationMain {
         //Here Calling FirstName Method Storing The Result In Result
         boolean firstName = userRegistration.FirstNameValidation("Zlatan");
         System.out.println(firstName);//Printing Result
+        //Here Calling Validate FirstName Method Storing The Result In Result
+        boolean lastName = userRegistration.FirstNameValidation("Ibrah");
+        System.out.println(lastName);//Printing Result
     }
 
 }
