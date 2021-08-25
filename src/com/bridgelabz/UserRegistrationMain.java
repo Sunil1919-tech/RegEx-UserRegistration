@@ -25,7 +25,7 @@ public class UserRegistrationMain {
         boolean PhoneNo = userRegistration.ValidatePhoneNum(" 9381938400");
         System.out.println(PhoneNo);//Printing Result
         //validating the password and prints the result
-        boolean Password = userRegistration.PasswordValidation("Bridgelabz");
+        boolean Password = userRegistration.PasswordValidation("Bridgelabz123");
         System.out.println(Password);
 
 
