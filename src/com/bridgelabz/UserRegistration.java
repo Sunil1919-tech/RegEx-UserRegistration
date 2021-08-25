@@ -53,10 +53,8 @@ public class UserRegistration {
         boolean Validation = Pattern.matches("^[a-z][a-zA-Z0-9]+([._+#-][a-zA-Z0-9]+)*@[a-zA-Z0-93]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?$", Email);
         //Validation Is Boolean Type True Or False
         if (Validation) {
-            //If Validation Is True Print The Valid Name
             System.out.println("Entered Email is Valid");
         } else {
-            //If Validation Is False Print The Name Is Invalid
             System.out.println("Invalid Email..  Please Enter valid Email");
         }
         return Validation;//Return Validation
@@ -70,11 +68,26 @@ public class UserRegistration {
         //Phone Number Matching With The Pattern And Stored In Validation
         boolean Validation = Pattern.matches("^[9][1] [6-9]{1}[0-9]{9}$", PhoneNumber);
         //Validation Is Boolean Type True Or False
-        if (Validation) {//If Validation Is True Print The Valid Number
+        if (Validation) {
             System.out.println("Entered Mobile Number is Valid");
-        } else {//If Validation Is False Print The Number Is Invalid
+        } else {
             System.out.println("Invalid  Mobile Number . \n Enter valid Phone  Number");
         }
         return Validation;//Return Validation
+    }
+
+    /*
+        Declaring Method TO Validate Password
+     */
+    public boolean PasswordValidation(String Password) {
+        //Password Matching With The Pattern And Stored In Validation
+        boolean Validation = Pattern.matches("(?=.*[a-z]).{8,}", Password);
+        //Validation Is Boolean Type True Or False
+        if (Validation) {
+            System.out.println("Entered Password is Valid");
+        } else {
+            System.out.println("Invalid Password... Enter valid Password");
+        }
+        return Validation; //Return Validation
     }
 }

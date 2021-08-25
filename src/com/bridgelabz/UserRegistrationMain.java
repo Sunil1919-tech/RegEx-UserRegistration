@@ -22,10 +22,12 @@ public class UserRegistrationMain {
         boolean email = userRegistration.EmailValidation("sunil19@gmail.com"); //declaring the email using Boolean
         System.out.println(email);//Printing Result
         //Here Calling Validate PhoneNumber Method Storing The Result In Result
-        boolean pNbr = userRegistration.ValidatePhoneNum(" 9381938400");
-        System.out.println(pNbr);//Printing Result
+        boolean PhoneNo = userRegistration.ValidatePhoneNum(" 9381938400");
+        System.out.println(PhoneNo);//Printing Result
+        //validating the password and prints the result
+        boolean Password = userRegistration.PasswordValidation("bridgelabz");
+        System.out.println(Password);
     }
-
 }
 
 
