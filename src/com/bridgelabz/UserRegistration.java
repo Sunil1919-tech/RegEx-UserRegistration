@@ -80,10 +80,11 @@ public class UserRegistration {
         Declaring Method TO Validate Password
         with min. 8 characters and One UpperCase
         validate the Password with numeric value
+        validate the password with Special character
      */
     public boolean PasswordValidation(String Password) {
         //Password Matching With The Pattern And Stored In Validation
-        boolean Validation = Pattern.matches("^(?=.*[A-Z]){1}(?=.*[a-z])(?=.*[0-9]).{8,}$", Password);
+        boolean Validation = Pattern.matches("^(?=.*[A-Z]){1}(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%!]).{8,}$", Password);
         //Validation Is Boolean Type True Or False
         if (Validation) {
             System.out.println("Entered Password is Valid");
