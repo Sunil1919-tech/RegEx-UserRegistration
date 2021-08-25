@@ -18,6 +18,10 @@ public class UserRegistrationMain {
         //Here Calling Validate FirstName Method Storing The Result In Result
         boolean lastName = userRegistration.FirstNameValidation("Ibrah");
         System.out.println(lastName);//Printing Result
+        //Here Calling Validate Email Method Storing The Result In Result
+
+        boolean email = userRegistration.EmailValidation("sunil19@gmail.com"); //declaring the email using Boolean
+        System.out.println(email);//Printing Result
     }
 
 }
