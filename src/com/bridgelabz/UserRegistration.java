@@ -61,4 +61,20 @@ public class UserRegistration {
         }
         return Validation;//Return Validation
     }
+
+    //UseCase4
+    /*
+        Declaring Method TO Validate Phone Number
+     */
+    public boolean ValidatePhoneNum(String PhoneNumber) {
+        //Phone Number Matching With The Pattern And Stored In Validation
+        boolean Validation = Pattern.matches("^[9][1] [6-9]{1}[0-9]{9}$", PhoneNumber);
+        //Validation Is Boolean Type True Or False
+        if (Validation) {//If Validation Is True Print The Valid Number
+            System.out.println("Entered Mobile Number is Valid");
+        } else {//If Validation Is False Print The Number Is Invalid
+            System.out.println("Invalid  Mobile Number . \n Enter valid Phone  Number");
+        }
+        return Validation;//Return Validation
+    }
 }
